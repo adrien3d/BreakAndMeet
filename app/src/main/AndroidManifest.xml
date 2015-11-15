@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.breakandmeet.android"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="23" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:theme="@style/MyMaterialTheme" >
+        <activity
+            android:name="com.breakandmeet.android.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyCVu-9mXjT6Uym9lZfp6KZ4LG_zf8dbTE8"/>
+
+        <activity
+            android:name="com.breakandmeet.android.LoginActivity"
+            android:theme="@style/LogTheme.Dark" />
+        <activity
+            android:name="com.breakandmeet.android.SignupActivity"
+            android:theme="@style/LogTheme.Dark" />
+        <activity android:name=".CityActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name="com.breakandmeet.android.CreateTableActivity"/>
+        <activity android:name="com.breakandmeet.android.JoinTableActivity"/>
+        <activity android:name="com.breakandmeet.android.GMapActivity"/>
+    </application>
+
+</manifest>
