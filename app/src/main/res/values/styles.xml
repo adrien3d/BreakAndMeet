@@ -51,4 +51,10 @@
         <item name="android:textColorSecondary">@color/grey</item><!--Arrow-->
         <item name="actionMenuTextColor">@android:color/holo_blue_dark</item>
     </style>
+
+    <style name="foodRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@layout/peo_full</item>
+        <item name="android:minHeight">48dip</item>
+        <item name="android:maxHeight">48dip</item>
+    </style>
 </resources>

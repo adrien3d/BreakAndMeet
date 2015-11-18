@@ -8,21 +8,17 @@
         layout="@layout/toolbar"
         ></include>
 
-    <EditText
-        android:layout_width="wrap_content"
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="time"
-        android:ems="10"
-        android:id="@+id/editText"
-        android:layout_alignTop="@+id/textView3"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_alignStart="@+id/textView2" />
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"></android.support.design.widget.TextInputLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Nombre de personnes"
+        android:text="Table ouverte à "
         android:id="@+id/textView2"
         android:layout_marginTop="57dp"
         android:layout_below="@+id/tool_bar"
@@ -42,9 +38,32 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/ratingBar"
+        android:numStars="5"
+        android:rating="3"
+        android:stepSize="1"
         android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="20dp"
+        style="@style/foodRatingBar" />
+
+    <EditText android:id="@+id/input_heure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Heure"
+        android:editable="false"
+        android:inputType="none"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choisir un restaurant"
+        android:id="@+id/gotoStep2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="101dp" />
 
     <!--  <SeekBar
           android:layout_width="wrap_content"

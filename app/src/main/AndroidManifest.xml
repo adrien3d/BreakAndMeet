@@ -39,6 +39,7 @@
         <activity android:name=".CityActivity"
             android:parentActivityName=".MainActivity"/>
         <activity android:name="com.breakandmeet.android.CreateTableActivity"/>
+        <activity android:name="com.breakandmeet.android.CreateTable2Activity"/>
         <activity android:name="com.breakandmeet.android.JoinTableActivity"/>
         <activity android:name="com.breakandmeet.android.GMapActivity"/>
     </application>
